@@ -1,0 +1,5 @@
+http://flask.pocoo.org/docs/1.0/installation/#installation
+
+http://flask.pocoo.org/docs/1.0/quickstart/#quickstart
+
+https://www.thachmai.info/2015/04/30/running-mongodb-container/
