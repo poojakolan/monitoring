@@ -1,0 +1,7 @@
+1) Developing python flask based rest api's which reneder daat to web app.
+This app need to deploy to pcf 
+This app needs to connect to mongoDB
+
+Challenges:
+
+1) MongoDB in Jumpbox not able to access from outside world(protected)
