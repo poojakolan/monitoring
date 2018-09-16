@@ -1,0 +1,23 @@
+top_dir_data = {
+    data: [
+        {
+            ip: ""
+            disk_data: [
+                { disk_name: '',
+                  total_size:
+                  used:
+                  used_percent:
+                  mounted_path:
+                },
+                ....
+            ],
+            top_folders: [
+                "",
+                "",
+                ...
+            ]
+
+        }
+    ]
+
+}
