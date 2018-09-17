@@ -3,6 +3,8 @@ import os
 import shlex
 import subprocess
 import time
+import pymongo
+from bson.objectid import ObjectId
 
 top_dir_data = {}
 top_dir_data['data'] = []
@@ -46,6 +48,17 @@ for server in server_data:
     top_dir_data['data'].append(server_obj)
 
 print(top_dir_data)
+
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient[""]
+mycol = mydb["db"]
+
+mydict = [{ "_id" : 1, "data": top_dir_data }]
+
+for d in mydict:
+    mycol.update({'_id':d['_id']}, d,True)
+
+
 '''file_name = 'machine_memory_details_'+st+'.xlsx'
 from_addr = 
 to_addr = 
