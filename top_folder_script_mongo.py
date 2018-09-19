@@ -28,7 +28,8 @@ for server in server_data:
             disk_obj = {}
             disk_obj['disk_name'] = disk_params[0]
             disk_obj['total_size'] = disk_params[1]
-            disk_obj['used_size'] = disk_params[3]
+            disk_obj['used_size'] = disk_params[2]
+            disk_obj['avail_size'] = disk_params[3]
             disk_obj['used_percent'] = disk_params[4]
             disk_obj['mounted_path'] = disk_params[5]
             server_obj['disk_data'].append(disk_obj)
